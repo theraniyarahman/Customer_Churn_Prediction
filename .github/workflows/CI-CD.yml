@@ -52,4 +52,4 @@ jobs:
           push: true
           tags: |
             ${{secrets.DOCKERHUB_USERNAME}}/customer-churn-api:latest
-            ${{secrets.DOCKERHUB_USERNAME}}/customer-churn-api:${{github.sha}}
+            ${{secrets.DOCKERHUB_USERNAME}}/customer-churn-api:${{ github.sha }}
